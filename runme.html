@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="head"></div>
+  <div class="calculator">
+      <div class="input" id="input"></div>
+      <div class="buttons">
+        <div class="operators">
+          <div data-tilt onclick="updateCurr('+')">+</div>
+          <div data-tilt onclick="updateCurr('-')">-</div>
+          <div data-tilt onclick="updateCurr('*')">&times;</div>
+          <div data-tilt onclick="updateCurr('/')">&divide;</div>
+        </div>
+        <div class="leftPanel">
+          <div class="numbers">
+            <div onclick="updateCurr('7')" data-tilt class="el-tilt" ><div class='popo'>7</div></div>
+            <div onclick="updateCurr('8')" data-tilt class="el-tilt"><div class='popo'>8</div></div>
+            <div onclick="updateCurr('9')" data-tilt class="el-tilt"><div class='popo'>9</div></div>
+          </div>
+          <div class="numbers">
+            <div onclick="updateCurr('4')" data-tilt class="el-tilt"><div class='popo'>4</div></div>
+            <div onclick="updateCurr('5')" data-tilt class="el-tilt"><div class='popo'>5</div></div>
+            <div onclick="updateCurr('6')" data-tilt class="el-tilt"><div class='popo'>6</div></div>
+          </div>
+          <div class="numbers">
+            <div onclick="updateCurr('1')" data-tilt class="el-tilt"><div class='popo'>1</div></div>
+            <div onclick="updateCurr('2')" data-tilt class="el-tilt"><div class='popo'>2</div></div>
+            <div onclick="updateCurr('3')" data-tilt class="el-tilt"><div class='popo'>3</div></div>
+          </div>
+          <div class="numbers">
+            <div onclick="updateCurr('0')" data-tilt class="el-tilt"><div class='popo'>0</div></div>
+            <div onclick="updateCurr('.')" data-tilt class="el-tilt"><div class='popo'>.</div></div>
+            <div onclick="updateCurr('C')" id="clear" data-tilt class="el-tilt"><div class='popo'>C</div></div>
+          </div>
+        </div>
+        <div data-tilt class="equal" onclick="updateCurr('=')" id="result"><div >=</div></div>
+      </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="tilt.jquery.js"></script>
+    <script src="JS.js"></script>
+</body>
+</html>
